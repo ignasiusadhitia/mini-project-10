@@ -5,7 +5,16 @@ export default {
     fontFamily: {
       sans: ['Saira', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        black: '#23262F',
+        white: '#ffffff',
+        gray: '#EAEEF3',
+        'light-silver': '#D9D9D9',
+        purple: '#6D5DD3',
+        green: '#286F6C',
+      },
+    },
   },
   plugins: [],
 };
