@@ -14,6 +14,19 @@ export default {
         purple: '#6D5DD3',
         green: '#286F6C',
       },
+      container: {
+        center: true,
+        screens: {
+          sm: '100%',
+          md: '100%',
+          lg: '1240px',
+          xl: '1240px',
+          '2xl': '1240px',
+        },
+      },
+      padding: {
+        7.5: '1.875rem',
+      },
     },
   },
   plugins: [],
