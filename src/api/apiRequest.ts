@@ -1,3 +1,4 @@
+import { AxiosError } from 'axios';
 import axiosInstance from './axiosInstance';
 
 export const getData = (url: string) =>
@@ -8,6 +9,7 @@ export const postData = async (endpoint: string, data: object) => {
     const response = await axiosInstance.post(endpoint, data);
     return response.data;
   } catch (error) {
-    throw error.response?.data || error.message;
+    const axiosError = error as AxiosError;
+    throw axiosError.response?.data || axiosError.message;
   }
 };
