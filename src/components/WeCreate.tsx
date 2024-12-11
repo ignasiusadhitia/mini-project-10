@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WeCreate = () => {
+const WeCreate: React.FC = () => {
   return <div>WeCreate</div>;
 };
 

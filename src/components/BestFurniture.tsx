@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BestFurniture = () => {
+const BestFurniture: React.FC = () => {
   return <div>BestFurniture</div>;
 };
 

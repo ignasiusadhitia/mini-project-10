@@ -9,7 +9,7 @@ import AllProduct from '../components/AllProduct';
 import Testimonial from '../components/Testimonial';
 import Footer from '../components/Footer';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <>
       <Navbar />

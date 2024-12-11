@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NewInStore = () => {
+const NewInStore: React.FC = () => {
   return <div>NewInStore</div>;
 };
 

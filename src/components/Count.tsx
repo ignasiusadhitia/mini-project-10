@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Count = () => {
+const Count: React.FC = () => {
   return <div>Count</div>;
 };
 
