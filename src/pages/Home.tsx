@@ -8,6 +8,7 @@ import BestFurniture from '../components/BestFurniture';
 import AllProduct from '../components/AllProduct';
 import Testimonial from '../components/Testimonial';
 import Footer from '../components/Footer';
+import CTA from '../components/CTA';
 
 const Home: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
       <BestFurniture />
       <AllProduct />
       <Testimonial />
+      <CTA />
       <Footer />
     </>
   );

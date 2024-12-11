@@ -1,12 +1,12 @@
 import { SWRConfig } from 'swr';
 import Home from './pages/Home';
-import { fetcher } from './utils/fetcher';
+import { getData } from './api/apiRequest';
 
 function App() {
   return (
     <SWRConfig
       value={{
-        fetcher,
+        fetcher: getData,
         revalidateOnFocus: false,
         dedupingInterval: 2000,
       }}
