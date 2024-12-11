@@ -15,13 +15,15 @@ const Home: React.FC = () => {
     <>
       <Navbar />
       <Hero />
-      <Count />
-      <WeCreate />
-      <NewInStore />
-      <BestFurniture />
-      <AllProduct />
-      <Testimonial />
-      <CTA />
+      <main>
+        <Count />
+        <WeCreate />
+        <NewInStore />
+        <BestFurniture />
+        <AllProduct />
+        <Testimonial />
+        <CTA />
+      </main>
       <Footer />
     </>
   );
