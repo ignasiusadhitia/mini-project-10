@@ -9,7 +9,7 @@ const navItems = [
 
 const Navbar: React.FC = () => {
   return (
-    <div className="sticky top-0 z-50 w-full">
+    <div className="fixed top-0 z-50 w-full">
       <nav className="container flex justify-between py-11 px-7.5">
         <span className="block font-bold text-white text-4xl">FurniShop</span>
         <ul className="flex gap-16">

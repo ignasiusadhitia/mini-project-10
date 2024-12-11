@@ -13,6 +13,7 @@ export default {
         'light-silver': '#D9D9D9',
         purple: '#6D5DD3',
         green: '#286F6C',
+        'platinum-transparent': 'rgba(226, 226, 226, 0.4)',
       },
       container: {
         center: true,
@@ -25,6 +26,12 @@ export default {
         },
       },
       padding: {
+        7.5: '1.875rem',
+      },
+      fontSize: {
+        '6.5xl': '4rem',
+      },
+      spacing: {
         7.5: '1.875rem',
       },
     },
