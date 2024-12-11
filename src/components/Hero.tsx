@@ -1,10 +1,10 @@
 import React from 'react';
 import { useFetchData } from '../hooks/useFetchData';
-import Skeleton from 'react-loading-skeleton';
+import Skeleton from './commons/Skeleton';
 
 const Hero: React.FC = () => {
   const { data, error, isLoading } = useFetchData('/header');
-  console.log(data);
+
   return (
     <header>
       {isLoading && <Skeleton />}
