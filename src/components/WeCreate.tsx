@@ -33,7 +33,7 @@ const FeaturesItem: React.FC<{ feature: Feature }> = ({ feature }) => (
 
 const WeCreate: React.FC = () => {
   return (
-    <section className="container pt-[163px] pb-[50px] md:pb-[73px] grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-[100px] px-6">
+    <section className="container pt-[163px] pb-[50px] md:pb-[73px] grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-[100px] px-6 md:px-0">
       <div className="h-[270px] md:h-[443px] order-2 md:order-1">
         <img
           src={weCreateBanner}

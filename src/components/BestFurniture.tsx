@@ -3,7 +3,7 @@ import { bestFurnitureBanner } from '../assets/images';
 
 const BestFurniture: React.FC = () => {
   return (
-    <section className="container pt-[163px] pb-[50px] md:pb-[73px] grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-[100px] px-6">
+    <section className="container py-[50px] md:py-[96px] grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-[100px] px-6 md:px-0">
       <div className="flex flex-col gap-[15px] md:gap-[35px]">
         <h2 className="text-2xl md:text-4.5xl font-semibold mt-[41px]">
           The Best Furniture Manufacturer of your choice
