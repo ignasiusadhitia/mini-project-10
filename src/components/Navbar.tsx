@@ -28,7 +28,11 @@ const Navbar: React.FC = () => {
         <ul className="flex gap-16">
           {navItems.map((item) => (
             <li key={item.name}>
-              <a href={item.href} className="text-base hover:font-semibold">
+              <a
+                href={item.href}
+                className="text-base hover:font-semibold"
+                rel="noreferrer noopener"
+              >
                 {item.name}
               </a>
             </li>
