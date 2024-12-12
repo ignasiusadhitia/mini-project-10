@@ -29,6 +29,7 @@ export default {
         7.5: '1.875rem',
       },
       fontSize: {
+        '4.5xl': '2.5rem',
         '6.5xl': '4rem',
       },
       spacing: {
