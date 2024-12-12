@@ -1,6 +1,15 @@
 import React from 'react';
 
-const TestimonialCard: React.FC = ({ testimonial }) => {
+interface Testimonial {
+  testimonial: {
+    image: string;
+    name: string;
+    title: string;
+    message: string;
+  };
+}
+
+const TestimonialCard: React.FC<Testimonial> = ({ testimonial }) => {
   return (
     <div className="w-full mt-[36px]">
       <div className="flex items-center gap-5 mb-[30px] ">
