@@ -38,23 +38,27 @@ const CTA: React.FC = () => {
   };
 
   return (
-    <section>
-      CTA
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="email"
-          id="email"
-          value={email}
-          onChange={handleChange}
-          disabled={status.loading}
-        />
-        <button type="submit" disabled={status.loading}>
-          {status.loading ? 'Submitting...' : 'Shop Now'}
-        </button>
-      </form>
-      {status.success && <span>Success: {status.success}</span>}
-      {status.error && <span>Error: {status.error}</span>}
+    <section className="container py-[100px] grid grid-cols-2">
+      <div></div>
+      <div>
+        <h2>Get more discount Off your order</h2>
+        <p>Join our mailing list</p>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            value={email}
+            onChange={handleChange}
+            disabled={status.loading}
+          />
+          <button type="submit" disabled={status.loading}>
+            {status.loading ? 'Submitting...' : 'Shop Now'}
+          </button>
+        </form>
+        {status.success && <span>Success: {status.success}</span>}
+        {status.error && <span>Error: {status.error}</span>}
+      </div>
     </section>
   );
 };
