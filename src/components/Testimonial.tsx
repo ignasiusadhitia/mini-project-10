@@ -1,5 +1,7 @@
 import React from 'react';
 import { useFetchData } from '../hooks/useFetchData';
+import TestimonialCard from './commons/TestimonialCard';
+import Skeleton from './commons/Skeleton';
 
 const Testimonial: React.FC = () => {
   const { data, error, isLoading } = useFetchData(
@@ -7,7 +9,21 @@ const Testimonial: React.FC = () => {
   );
   console.log(data);
 
-  return <div>Testimonial</div>;
+  return (
+    <section className="container grid grid-cols-2">
+      <div>
+        <h2>What people are saying about us</h2>
+        {isLoading && <Skeleton />}
+        {error && <div>Error: {error.message}</div>}
+        {data && <TestimonialCard />}
+        {/* Navigation */}
+        <div></div>
+      </div>
+      <div>
+        <img src="" alt="" />
+      </div>
+    </section>
+  );
 };
 
 export default Testimonial;
