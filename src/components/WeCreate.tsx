@@ -41,7 +41,7 @@ const WeCreate: React.FC = () => {
           className="w-full h-full object-cover rounded-[5px]"
         />
       </div>
-      <div className="flex flex-col gap-[14px]">
+      <div className="flex flex-col gap-[14px] order-1 md:order-2">
         <h2 className="text-2xl md:text-4.5xl font-semibold max-w-[407px]">
           We Create Your Home More Aestetic
         </h2>
