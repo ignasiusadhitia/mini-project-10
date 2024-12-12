@@ -36,7 +36,6 @@ const NewInStore: React.FC = () => {
             },
           }}
           spaceBetween={10}
-          loop={true}
           pagination={{
             clickable: true,
           }}
@@ -44,8 +43,8 @@ const NewInStore: React.FC = () => {
         >
           {data &&
             data?.category.map((item) => (
-              <SwiperSlide>
-                <NewProductCard key={item.title} item={item} />
+              <SwiperSlide key={item.title}>
+                <NewProductCard item={item} />
               </SwiperSlide>
             ))}
         </Swiper>

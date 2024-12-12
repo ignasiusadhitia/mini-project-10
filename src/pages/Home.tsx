@@ -12,7 +12,7 @@ import CTA from '../components/CTA';
 
 const Home: React.FC = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <Hero />
       <main>
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         <CTA />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

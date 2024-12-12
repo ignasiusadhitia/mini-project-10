@@ -1,13 +1,28 @@
 import React from 'react';
 
-const ProductCard: React.FC = () => {
+const ProductCard: React.FC = ({ product }) => {
   return (
-    <div>
-      <img src="" alt="" />
-      <h3>Product Name</h3>
-      <p>
-        <span>$</span>
-        <span>$</span>
+    <div className="w-full mb-[30px]">
+      <img
+        src={product.image}
+        alt={product.title}
+        className="h-[170px] md:h-[292px] w-full object-cover border rounded-[20px] border-light-silver"
+      />
+      <h3 className="text-black text-base md:text-2xl font-semibold mt-[15px] line-clamp-1">
+        {product.title}
+      </h3>
+      <p className="mt-2 text-xs md:text-base ">
+        {product.price_after_discount && (
+          <span>${product.price_after_discount}</span>
+        )}{' '}
+        <span
+          className={
+            product.price_after_discount &&
+            'line-through opacity-50 text-[10px] md:text-sm'
+          }
+        >
+          ${product.price}
+        </span>
       </p>
     </div>
   );
