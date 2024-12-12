@@ -28,7 +28,7 @@ const Testimonial: React.FC = () => {
   };
 
   return (
-    <section className="container grid grid-cols-2 gap-[42px] px-6 md:px-0">
+    <section className="container grid grid-cols-1 md:grid-cols-2 gap-[42px] px-6 md:px-0 py-[70px]">
       <div className="w-full ">
         <h2 className="text-2xl md:text-4.5xl font-semibold">
           What people are saying about us
@@ -43,7 +43,7 @@ const Testimonial: React.FC = () => {
           )}
         </div>
         {/* Navigation */}
-        <div className="flex justify-start items-center gap-[30px] mt-[31px]">
+        <div className="hidden md:flex justify-start items-center gap-[30px] mt-[31px]">
           <div
             onClick={handlePrevTestimonial}
             className={`w-[50px] h-[50px] rounded-full flex justify-center items-center hover:shadow-md hover:bg-green hover:text-white cursor-pointer ${
@@ -73,6 +73,29 @@ const Testimonial: React.FC = () => {
           alt="testimonial-banner"
           className="w-full h-full object-cover rounded-[5px]"
         />
+      </div>
+      <div className="flex md:hidden justify-center items-center gap-[30px] mt-[25px]">
+        <div
+          onClick={handlePrevTestimonial}
+          className={`w-[50px] h-[50px] rounded-full flex justify-center items-center hover:shadow-md hover:bg-green hover:text-white cursor-pointer ${
+            currentTestimonial === 0
+              ? 'opacity-50 cursor-not-allowed hover:text-black hover:bg-white hover:shadow-none'
+              : ''
+          }`}
+        >
+          <ArrowLeft />
+        </div>
+
+        <div
+          onClick={handleNextTestimonial}
+          className={`w-[50px] h-[50px] rounded-full flex justify-center items-center hover:shadow-md hover:bg-green hover:text-white cursor-pointer ${
+            currentTestimonial === data?.testimonials.length - 1
+              ? 'opacity-50 cursor-not-allowed hover:text-black hover:bg-white hover:shadow-none'
+              : ''
+          }`}
+        >
+          <ArrowRight />
+        </div>
       </div>
     </section>
   );

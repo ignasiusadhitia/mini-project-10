@@ -1,6 +1,16 @@
 import React from 'react';
 
-const ProductCard: React.FC = ({ product }) => {
+interface Product {
+  product: {
+    id: number;
+    title: string;
+    image: string;
+    price_after_discount: number | undefined;
+    price: number | string;
+  };
+}
+
+const ProductCard: React.FC<Product> = ({ product }) => {
   return (
     <div className="w-full mb-[30px]">
       <img
@@ -17,8 +27,9 @@ const ProductCard: React.FC = ({ product }) => {
         )}{' '}
         <span
           className={
-            product.price_after_discount &&
-            'line-through opacity-50 text-[10px] md:text-sm'
+            product.price_after_discount
+              ? 'line-through opacity-50 text-[10px] md:text-sm'
+              : undefined
           }
         >
           ${product.price}
@@ -27,5 +38,4 @@ const ProductCard: React.FC = ({ product }) => {
     </div>
   );
 };
-
 export default ProductCard;
