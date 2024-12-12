@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 z-50 w-full ${isScrolled ? 'bg-white opacity-95 shadow-sm text-black' : 'bg-transparent text-white'}`}
+      className={`fixed top-0 z-50 w-full transition duration-300 ease-in-out ${isScrolled ? 'bg-white opacity-95 shadow-sm text-black' : 'bg-transparent text-white'}`}
     >
       <nav className="container flex justify-between py-11 px-7.5">
         <span className="block font-bold text-4xl">FurniShop</span>
