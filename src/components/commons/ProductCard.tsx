@@ -18,10 +18,10 @@ const ProductCard: React.FC<Product> = ({ product }) => {
         alt={product.title}
         className="h-[170px] md:h-[292px] w-full object-cover border rounded-[20px] border-light-silver"
       />
-      <h3 className="text-black text-base md:text-2xl font-semibold mt-[15px] line-clamp-1">
+      <h3 className="text-black text-base md:text-2xl md:leading-normal font-semibold mt-[15px] line-clamp-1">
         {product.title}
       </h3>
-      <p className="mt-2 text-xs md:text-base ">
+      <p className="mt-2 text-xs md:text-base md:leading-normal ">
         {product.price_after_discount && (
           <span>${product.price_after_discount}</span>
         )}{' '}

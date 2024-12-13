@@ -12,7 +12,7 @@ const NewInStore: React.FC = () => {
   return (
     <section className="container py-[50px] md:py-[70px] grid grid-cols-1 md:grid-cols-[245px_100%] overflow-hidden gap-[70px] px-6 md:px-0">
       <div className="w-full md:w-[245px] flex flex-row md:flex-col gap-5 md:gap-0">
-        <h2 className="text-2xl md:text-4.5xl font-semibold mt-0 md:mt-[41px] w-full">
+        <h2 className="text-2xl md:text-4.5xl md:leading-normal font-semibold mt-0 md:mt-[41px] w-full">
           New In Store Now
         </h2>
         <p className="text-base mt-0 md:mt-[89px] mb-[48px]">

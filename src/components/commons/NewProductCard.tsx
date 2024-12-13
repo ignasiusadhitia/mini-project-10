@@ -15,7 +15,7 @@ const NewProductCard: React.FC<NewProductCardType> = ({ item }) => {
         alt={item.title}
         className="relative rounded-[5px] h-full w-full"
       />
-      <h3 className="absolute capitalize z-10 text-center font-semibold text-[18px] md:text-[28px] mb-7.5 md:mb-5 text-white">
+      <h3 className="absolute capitalize z-10 text-center font-semibold text-[18px] md:text-[28px] md:leading-normal mb-7.5 md:mb-5 text-white">
         {item.title}
       </h3>
     </div>

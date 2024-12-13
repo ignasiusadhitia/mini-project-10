@@ -30,7 +30,7 @@ const Testimonial: React.FC = () => {
   return (
     <section className="container grid grid-cols-1 md:grid-cols-2 gap-[42px] px-6 md:px-0 py-[70px]">
       <div className="w-full ">
-        <h2 className="text-2xl md:text-4.5xl font-semibold">
+        <h2 className="text-2xl md:text-4.5xl md:leading-normal font-semibold">
           What people are saying about us
         </h2>
         {isLoading && <Skeleton />}

@@ -50,7 +50,7 @@ const CTA: React.FC = () => {
       <section className="container pt-[100px] pb-[142px] grid grid-cols-1 md:grid-cols-2 gap-[42px]">
         <div></div>
         <div>
-          <h2 className="text-2xl md:text-4.5xl font-semibold mt-0 md:mt-[41px] w-full text-white md:max-w-[349px] px-6 md:px-0">
+          <h2 className="text-2xl md:text-4.5xl md:leading-normal font-semibold mt-0 md:mt-[41px] w-full text-white md:max-w-[349px] px-6 md:px-0">
             Get more discount Off your order
           </h2>
           <p className="text-xl mt-5 mb-[40px] text-white">

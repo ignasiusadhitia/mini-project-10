@@ -25,8 +25,10 @@ const FeaturesItem: React.FC<{ feature: Feature }> = ({ feature }) => (
   <li className="flex gap-4">
     <div>{feature.icon}</div>
     <div className="flex flex-col gap-[10px] md:gap-2">
-      <h3 className="text-base md:text-xl font-semibold">{feature.title}</h3>
-      <p className="text-sm md:text-base">{feature.desc}</p>
+      <h3 className="text-base md:text-xl md:leading-normal font-semibold">
+        {feature.title}
+      </h3>
+      <p className="text-sm md:text-base md:leading-normal">{feature.desc}</p>
     </div>
   </li>
 );
@@ -42,10 +44,10 @@ const WeCreate: React.FC = () => {
         />
       </div>
       <div className="flex flex-col gap-[14px] order-1 md:order-2">
-        <h2 className="text-2xl md:text-4.5xl font-semibold max-w-[407px]">
+        <h2 className="text-2xl md:text-4.5xl md:leading-normal font-semibold max-w-[407px]">
           We Create Your Home More Aestetic
         </h2>
-        <p className="text-sm md:text-xl">
+        <p className="text-sm md:text-xl md:leading-normal">
           Furnitre power is a software as services for multiperpose business
           management system.
         </p>

@@ -41,9 +41,15 @@ const AllProduct: React.FC = () => {
           </div>
         )}
         {data &&
-          data.products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          data.products.map(
+            (product: {
+              id: number;
+              title: string;
+              image: string;
+              price_after_discount?: number;
+              price: string | number;
+            }) => <ProductCard key={product.id} product={product} />
+          )}
       </div>
       {/* Navigation */}
       <div className="flex justify-center items-center gap-[30px]">
