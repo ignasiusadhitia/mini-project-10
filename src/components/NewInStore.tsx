@@ -42,7 +42,7 @@ const NewInStore: React.FC = () => {
           className="mySwiper"
         >
           {data &&
-            data?.category.map((item) => (
+            data?.category.map((item: { title: string; image: string }) => (
               <SwiperSlide key={item.title}>
                 <NewProductCard item={item} />
               </SwiperSlide>
