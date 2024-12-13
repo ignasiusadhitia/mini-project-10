@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { postData } from '../api/apiRequest';
 import { cTABanner } from '../assets/images';
-import { error } from 'console';
 
 interface Status {
   loading: boolean;
