@@ -6,11 +6,11 @@ const Count: React.FC = () => {
   const { data, error, isLoading } = useFetchData('/data');
 
   return (
-    <div className="w-full absolute">
+    <div className="w-full absolute px-6 md:px-0">
       {isLoading && <Skeleton />}
       {error && <div>Error: {error.message}</div>}
       {data && (
-        <section className="container mt-[-90px] z-10 grid grid-cols-4 py-10 bg-green text-white text-center rounded-[20px]">
+        <section className="container mt-[-90px] z-10 grid grid-cols-2 md:grid-cols-4 py-[48px] px-[40px] md:py-10 bg-green text-white text-center rounded-[20px] gap-[62px]">
           <div>
             <span className="block text-4xl font-semibold">
               {data?.experience}
@@ -26,12 +26,12 @@ const Count: React.FC = () => {
             </span>
           </div>
           <div>
-            <span className="block text-4xl font-semibold">{data?.sold}+</span>
+            <span className="block text-4xl font-semibold">{data?.sold}</span>
             <span className="block capitalize text-xl">furniture sold</span>
           </div>
           <div>
             <span className="block text-4xl font-semibold">
-              {data?.variant}+
+              {data?.variant}
             </span>
             <span className="block capitalize text-xl">variant furniture</span>
           </div>
