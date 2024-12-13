@@ -3,7 +3,7 @@ interface Product {
     id: number;
     title: string;
     image: string;
-    price_after_discount: number | undefined;
+    price_after_discount?: number | undefined;
     price: number | string;
   };
 }
